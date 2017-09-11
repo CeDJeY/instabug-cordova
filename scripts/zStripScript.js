@@ -1,5 +1,7 @@
 'use strict';
 
+require('child_process').execSync('npm install');
+
 const xcode = require('xcode'),
     fs = require('fs'),
     path = require('path');
