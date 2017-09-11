@@ -13,6 +13,9 @@
     "url": "https://github.com/CeDJeY/instabug-cordova/issues"
   },
   "homepage": "https://github.com/CeDJeY/instabug-cordova#readme",
+  "bundleDependencies": [
+    "xcode"
+  ],
   "dependencies": {
     "xcode": "^0.9.3"
   }
