@@ -8,6 +8,9 @@ import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.invocation.InstabugInvocationEvent;
 import com.instabug.library.invocation.InstabugInvocationMode;
 import com.instabug.library.invocation.util.InstabugFloatingButtonEdge;
+import com.instabug.library.Instabug;
+import com.instabug.library.invocation.InstabugInvocationEvent;
+import com.instabug.library.invocation.util.InstabugFloatingButtonEdge;
 
 import org.apache.cordova.CordovaActivity;
 
@@ -33,6 +36,8 @@ public class IBGPluginActivity extends CordovaActivity
         if(options != null) {
             setBuilderOptions(options);
         }
+
+        new Instabug.Builder(this.getApplication(), options.getString("token"), InstabugInvocationEvent.SHAKE).build();
 
         // Finish activity (required for no-display theme)
         IBGPluginActivity.this.finish();

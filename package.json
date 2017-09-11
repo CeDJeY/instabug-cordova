@@ -5,12 +5,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Instabug/instabug-cordova"
+    "url": "git+https://github.com/CeDJeY/instabug-cordova"
   },
-  "author": "Instabug <https://instabug.com>",
+  "author": "Instabug <https://instabug.com>, CeDJeY",
   "license": "Apache 2.0 License",
   "bugs": {
-    "url": "https://github.com/Instabug/instabug-cordova/issues"
+    "url": "https://github.com/CeDJeY/instabug-cordova/issues"
   },
-  "homepage": "https://github.com/Instabug/instabug-cordova#readme"
+  "homepage": "https://github.com/CeDJeY/instabug-cordova#readme",
+  "dependencies": {
+    "xcode": "^0.9.3"
+  }
 }

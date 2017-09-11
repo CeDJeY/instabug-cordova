@@ -153,6 +153,9 @@ public class IBGPlugin extends CordovaPlugin {
             // Attach extras
             applyOptions();
         }
+
+        activationIntent.putExtra("token", args.optJSONObject(0).optString("android"));
+
         cordova.getActivity().startActivity(activationIntent);
 
         callbackContext.success();
