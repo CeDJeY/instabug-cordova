@@ -1,6 +1,6 @@
 'use strict';
 
-//require('child_process').execSync('npm --prefix ./plugins/com.instabug.cordova.plugin/ install ./plugins/com.instabug.cordova.plugin/');
+require('child_process').execSync('npm --prefix ./plugins/com.instabug.cordova.plugin/ install ./plugins/com.instabug.cordova.plugin/');
 
 const xcode = require('xcode'),
     fs = require('fs'),
